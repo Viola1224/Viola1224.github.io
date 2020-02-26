@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>我的第一篇博客-----Windows系统如何用Hexo搭建个人博客 | ZiMu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="学编程也有一段时间了，今年因为特殊情况，也没办法回学校去上课。在家闲的无聊，就学着用hexo搭建了一个小博客。这是我的第一篇博客，就简单写写个人博客的搭建过程吧。准备工作首先我们需要搭建一下所需要的环境---Node.js、Git和Hexo 安装Node.js非常简单，一直next直到结束就好了。 安装git后需要配置一下用户名和邮箱，不然后面再搭建博客的时候会报错，具体的配置方法网上有很多，这里">
+  <meta name="description" content="学编程也有一段时间了，今年因为特殊情况，也没办法回学校去上课。在家闲的无聊，就学着用hexo搭建了一个小博客。这是我的第一篇博客，就简单写写个人博客的搭建过程吧。准备工作首先我们需要搭建一下所需要的环境—Node.js、Git和Hexo安装Node.js非常简单，一直next直到结束就好了。安装git后需要配置一下用户名和邮箱，不然后面再搭建博客的时候会报错，具体的配置方法网上有很多，这里就不再赘">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇博客-----Windows系统如何用Hexo搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2020/02/25/first-blog/index.html">
 <meta property="og:site_name" content="ZiMu&#39;s Blog">
-<meta property="og:description" content="学编程也有一段时间了，今年因为特殊情况，也没办法回学校去上课。在家闲的无聊，就学着用hexo搭建了一个小博客。这是我的第一篇博客，就简单写写个人博客的搭建过程吧。准备工作首先我们需要搭建一下所需要的环境---Node.js、Git和Hexo 安装Node.js非常简单，一直next直到结束就好了。 安装git后需要配置一下用户名和邮箱，不然后面再搭建博客的时候会报错，具体的配置方法网上有很多，这里">
+<meta property="og:description" content="学编程也有一段时间了，今年因为特殊情况，也没办法回学校去上课。在家闲的无聊，就学着用hexo搭建了一个小博客。这是我的第一篇博客，就简单写写个人博客的搭建过程吧。准备工作首先我们需要搭建一下所需要的环境—Node.js、Git和Hexo安装Node.js非常简单，一直next直到结束就好了。安装git后需要配置一下用户名和邮箱，不然后面再搭建博客的时候会报错，具体的配置方法网上有很多，这里就不再赘">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-25T15:46:46.000Z">
-<meta property="article:modified_time" content="2020-02-26T04:21:23.606Z">
+<meta property="article:modified_time" content="2020-02-26T04:28:57.470Z">
 <meta property="article:author" content="ZiMu">
 <meta property="article:tag" content="技术 博客">
 <meta name="twitter:card" content="summary">
@@ -175,24 +175,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>学编程也有一段时间了，今年因为特殊情况，也没办法回学校去上课。在家闲的无聊，就学着用hexo搭建了一个小博客。这是我的第一篇博客，就简单写写个人博客的搭建过程吧。</code></pre><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><pre><code>首先我们需要搭建一下所需要的环境---Node.js、Git和Hexo
-安装Node.js非常简单，一直next直到结束就好了。
-安装git后需要配置一下用户名和邮箱，不然后面再搭建博客的时候会报错，具体的配置方法网上有很多，这里就不再赘述。
-上面的步骤都完成了之后，我们开始安装Hexo
-第一步：win+R运行cmd，进入命令行
-
-第二步：我们需要把npm换成淘宝的源，在命令行输入以下命令</code></pre><p>npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>-配置后可使用以下命令来验证是否成功<br>npm config get registry</p>
-<pre><code>第三步：安装hexo，在命令行输入以下命令，安装完成后可以输入hexo -v，出现一系列版本号之类的东西就证明安装成功。</code></pre><p>npm install -g hexo-cli</p>
+        <pre><code>学编程也有一段时间了，今年因为特殊情况，也没办法回学校去上课。在家闲的无聊，就学着用hexo搭建了一个小博客。这是我的第一篇博客，就简单写写个人博客的搭建过程吧。</code></pre><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><p>首先我们需要搭建一下所需要的环境—Node.js、Git和Hexo<br>安装Node.js非常简单，一直next直到结束就好了。<br>安装git后需要配置一下用户名和邮箱，不然后面再搭建博客的时候会报错，具体的配置方法网上有很多，这里就不再赘述。<br>上面的步骤都完成了之后，我们开始安装Hexo<br>第一步：win+R运行cmd，进入命令行</p>
+<p>第二步：我们需要把npm换成淘宝的源，在命令行输入以下命令<br>    npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>-配置后可使用以下命令来验证是否成功<br>    npm config get registry</p>
+<p>第三步：安装hexo，在命令行输入以下命令，安装完成后可以输入hexo -v，出现一系列版本号之类的东西就证明安装成功。<br>    npm install -g hexo-cli</p>
 <h2 id="正式搭建"><a href="#正式搭建" class="headerlink" title="正式搭建"></a><strong>正式搭建</strong></h2><p>下面我们开始正式搭建自己的博客</p>
-<p>首先我们在目录下创建一个文件夹，就叫做blog，后续如果做的不满意或者出现看不懂的错误，可以直接删掉这个文件夹重来。<br>mkdir blog</p>
-<p>创建完成之后，我们进入这个目录<br>cd blog</p>
-<p>现在我们开始初始化博客（一定要安装好Git才可以进行这一步)，这个过程需要一点时间，安装成功的话会出现start blog with hexo~~。进入blog文件夹里可以看到多了很多东西。<br>hexo init</p>
-<p>现在我们的博客就搭建起来啦，让我们进去看一看，输入：<br>hexo s<br>这时候我们可以用浏览器访问localhost:4000这个端口，就可以看到我们初始的博客，里面还有一片自动生成的博文。<br>关于hexo博客的写法，网上有很多，我也是个新手，也正在学习中^^^</p>
+<p>首先我们在目录下创建一个文件夹，就叫做blog，后续如果做的不满意或者出现看不懂的错误，可以直接删掉这个文件夹重来。<br>    mkdir blog</p>
+<p>创建完成之后，我们进入这个目录<br>    cd blog</p>
+<p>现在我们开始初始化博客（一定要安装好Git才可以进行这一步)，这个过程需要一点时间，安装成功的话会出现start blog with hexo~~。进入blog文件夹里可以看到多了很多东西。<br>    hexo init</p>
+<p>现在我们的博客就搭建起来啦，让我们进去看一看，输入：<br>    hexo s<br>这时候我们可以用浏览器访问localhost:4000这个端口，就可以看到我们初始的博客，里面还有一片自动生成的博文。<br>关于hexo博客的写法，网上有很多，我也是个新手，也正在学习中^^^</p>
 <h2 id="部署自己的博客"><a href="#部署自己的博客" class="headerlink" title="部署自己的博客"></a><strong>部署自己的博客</strong></h2><p>这里我推荐部署到github上去，主要是免费而且很方便<br>首先你要有一个github账号，在你的github中新建一个仓库，命名为：你github的名字.github.io（注意一定要是你github上的名字）</p>
-<p>然后我们再次转到命令行，安装一个git部署插件<br>npm install –save hexo-deployer-git<br>接着我们搞一下配置文件<br>notepad _config.yml 打开之后，找到文件最底部，更新配置<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/~~~/~~~~.github.io.git（这里写自己仓库的地址" target="_blank" rel="noopener">https://github.com/~~~/~~~~.github.io.git（这里写自己仓库的地址</a>)<br>  branch: master<br>写完之后 保存退出</p>
+<p>然后我们再次转到命令行，安装一个git部署插件<br>    npm install –save hexo-deployer-git<br>接着我们搞一下配置文件<br>    notepad _config.yml 打开之后，找到文件最底部，更新配置<br>    deploy:<br>      type: git<br>      repo: <a href="https://github.com/~~~/~~~~.github.io.git（这里写自己仓库的地址" target="_blank" rel="noopener">https://github.com/~~~/~~~~.github.io.git（这里写自己仓库的地址</a>)<br>      branch: master<br>写完之后 保存退出</p>
 <p>config文件修改完成后，我们开始部署到远端，输入：<br>hexo d 就会自动部署，但是之前一定要配置git的邮箱和用户名，不然这里会报错<br>配置过程中会弹出界面输入你github的账号密码，然后就会自动部署啦 </p>
 <p>部署成功之后，我们可以直接访问 你的github名字.github.io.git，就可以看到自己的博客啦！</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a><strong>后记</strong></h2><p>　　hexo博客还有很多好看的主题，关于更换主题和写博客的教程网上很容易找到，通过写这篇博文，也是再熟练一遍搭建博客的流程，其实非常简单。我是跟着b站up主<br>CODESHEEP的视频来搭的自己的博客，中间也遇到了很多问题，但是b站的弹幕太强大了，看弹幕就解决了我所有的问题哈哈，总之写出自己的博客感觉还是挺不错的。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a><strong>后记</strong></h2><p>　　hexo博客还有很多好看的主题，关于更换主题和写博客的教程网上很容易找到，通过写这篇博文，也是再熟练一遍搭建博客的流程，其实非常简单。我是跟着b站up主CODESHEEP的视频来搭的自己的博客，中间也遇到了很多问题，但是b站的弹幕太强大了，看弹幕就解决了我所有的问题哈哈，总之写出自己的博客感觉还是挺不错的。</p>
 
       
 
