@@ -152,40 +152,29 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-NQueen" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/25/first-blog/">我的第一篇博客-----Windows系统如何用Hexo搭建个人博客</a>
+      <a class="article-title" href="/2020/03/08/NQueen/">Python 求解N皇后问题</a>
     </h1>
   
 
         
-        <a href="/2020/02/25/first-blog/" class="archive-article-date">
-  	<time datetime="2020-02-25T15:46:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
+        <a href="/2020/03/08/NQueen/" class="archive-article-date">
+  	<time datetime="2020-03-08T01:50:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>　　学编程也有一段时间了，今年因为特殊情况，也没办法回学校去上课。在家闲的无聊，就学着用hexo搭建了一个小博客。这是我的第一篇博客，就简单写写个人博客的搭建过程吧。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><p>首先我们需要搭建一下所需要的环境—Node.js、Git和Hexo<br>安装Node.js非常简单，一直next直到结束就好了。<br>安装git后需要配置一下用户名和邮箱，不然后面再搭建博客的时候会报错，具体的配置方法网上有很多，这里就不再赘述。<br>上面的步骤都完成了之后，我们开始安装Hexo<br>第一步：win+R运行cmd，进入命令行</p>
-<p>第二步：我们需要把npm换成淘宝的源，在命令行输入以下命令<br>    npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>-配置后可使用以下命令来验证是否成功<br>    npm config get registry</p>
-<p>第三步：安装hexo，在命令行输入以下命令，安装完成后可以输入hexo -v，出现一系列版本号之类的东西就证明安装成功。<br>    npm install -g hexo-cli</p>
-<h2 id="正式搭建"><a href="#正式搭建" class="headerlink" title="正式搭建"></a><strong>正式搭建</strong></h2><p>下面我们开始正式搭建自己的博客</p>
-<p>首先我们在目录下创建一个文件夹，就叫做blog，后续如果做的不满意或者出现看不懂的错误，可以直接删掉这个文件夹重来。<br>    mkdir blog</p>
-<p>创建完成之后，我们进入这个目录<br>    cd blog</p>
-<p>现在我们开始初始化博客（一定要安装好Git才可以进行这一步)，这个过程需要一点时间，安装成功的话会出现start blog with hexo~~。进入blog文件夹里可以看到多了很多东西。<br>    hexo init</p>
-<p>现在我们的博客就搭建起来啦，让我们进去看一看，输入：<br>    hexo s<br>这时候我们可以用浏览器访问localhost:4000这个端口，就可以看到我们初始的博客，里面还有一片自动生成的博文。<br>关于hexo博客的写法，网上有很多，我也是个新手，也正在学习中^^^</p>
-<h2 id="部署自己的博客"><a href="#部署自己的博客" class="headerlink" title="部署自己的博客"></a><strong>部署自己的博客</strong></h2><p>这里我推荐部署到github上去，主要是免费而且很方便<br>首先你要有一个github账号，在你的github中新建一个仓库，命名为：你github的名字.github.io（注意一定要是你github上的名字）</p>
-<p>然后我们再次转到命令行，安装一个git部署插件<br>    npm install –save hexo-deployer-git<br>接着我们搞一下配置文件<br>    notepad _config.yml 打开之后，找到文件最底部，更新配置<br>    deploy:<br>      type: git<br>      repo: <a href="https://github.com/~~~/~~~~.github.io.git（这里写自己仓库的地址" target="_blank" rel="noopener">https://github.com/~~~/~~~~.github.io.git（这里写自己仓库的地址</a>)<br>      branch: master<br>写完之后 保存退出</p>
-<p>config文件修改完成后，我们开始部署到远端，输入：<br>hexo d 就会自动部署，但是之前一定要配置git的邮箱和用户名，不然这里会报错<br>配置过程中会弹出界面输入你github的账号密码，然后就会自动部署啦 </p>
-<p>部署成功之后，我们可以直接访问 你的github名字.github.io.git，就可以看到自己的博客啦！</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a><strong>后记</strong></h2><p>　　hexo博客还有很多好看的主题，关于更换主题和写博客的教程网上很容易找到，通过写这篇博文，也是再熟练一遍搭建博客的流程，其实非常简单。我是跟着b站up主CODESHEEP的视频来搭的自己的博客，中间也遇到了很多问题，但是b站的弹幕太强大了，看弹幕就解决了我所有的问题哈哈，总之写出自己的博客感觉还是挺不错的。</p>
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>　　需要将N个皇后放在N*N的棋盘上，条件是任何一个皇后都不能威胁其他皇后，即任何两个皇后都<br>不能吃掉对方。怎么实现这种情况呢？</p>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>　　record[]来存储第i个皇后所在的列<br>　　设第i个皇后的位置为(i,record[i])，下一个摆放位置为(a,b)，当满足|record[i]-b|==|i-a|时，表示这两个皇后在一条对角线上，当满足record[i]==b时，表示在同一列，这两种情况下均不能放置皇后。<br>　　我们可以将递归过程设计成逐行放置皇后的过程，下面是实现代码：</p>
+<h1 id="解题过程"><a href="#解题过程" class="headerlink" title="解题过程"></a>解题过程</h1> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line">class Solution:</span><br><span class="line">     def judge(self, record, i, j):## i 代表第几个皇后， j表示第i个皇后的列</span><br><span class="line">        if i&#x3D;&#x3D;0:</span><br><span class="line">             return  True</span><br><span class="line">         for k in range(0,i):</span><br><span class="line">             if abs(record[k]-j)&#x3D;&#x3D;abs(i-k) or j&#x3D;&#x3D;record[k]:</span><br><span class="line">                 return False</span><br><span class="line">         return True</span><br><span class="line">     def queen(self, record, i, n):#i代表第I个皇后</span><br><span class="line">         if(i&#x3D;&#x3D;n):</span><br><span class="line">             return 1</span><br><span class="line">         ans&#x3D;0</span><br><span class="line">         for j in range(n):</span><br><span class="line">             if self.judge(record,i,j):</span><br><span class="line">                 record[i]&#x3D;j</span><br><span class="line">                 ans+&#x3D;self.queen(record,i+1,n)</span><br><span class="line"></span><br><span class="line">         return ans</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> a&#x3D;Solution()</span><br><span class="line"> n&#x3D;input()</span><br><span class="line"> x&#x3D;int(n)</span><br><span class="line"> record&#x3D;[0]*x</span><br><span class="line"> print(a.queen(record,0,x))</span><br></pre></td></tr></table></figure>
 
       
 
@@ -194,22 +183,11 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">技术 博客</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/25/first-blog/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/03/08/NQueen/">展开全文 >></a>
         </p>
       
 
@@ -239,39 +217,40 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/25/hello-world/">Hello World</a>
+      <a class="article-title" href="/2020/02/25/first-blog/">我的第一篇博客-----Windows系统如何用Hexo搭建个人博客</a>
     </h1>
   
 
         
-        <a href="/2020/02/25/hello-world/" class="archive-article-date">
-  	<time datetime="2020-02-25T15:33:40.363Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
+        <a href="/2020/02/25/first-blog/" class="archive-article-date">
+  	<time datetime="2020-02-25T15:46:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>　　学编程也有一段时间了，今年因为特殊情况，也没办法回学校去上课。在家闲的无聊，就学着用hexo搭建了一个小博客。这是我的第一篇博客，就简单写写个人博客的搭建过程吧。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><p>首先我们需要搭建一下所需要的环境—Node.js、Git和Hexo<br>安装Node.js非常简单，一直next直到结束就好了。<br>安装git后需要配置一下用户名和邮箱，不然后面再搭建博客的时候会报错，具体的配置方法网上有很多，这里就不再赘述。<br>上面的步骤都完成了之后，我们开始安装Hexo<br>第一步：win+R运行cmd，进入命令行</p>
+<p>第二步：我们需要把npm换成淘宝的源，在命令行输入以下命令<br>    <code>npm config set registry https://registry.npm.taobao.org</code><br>-配置后可使用以下命令来验证是否成功<br>   <code>npm config get registry</code></p>
+<p>第三步：安装hexo，在命令行输入以下命令，安装完成后可以输入hexo -v，出现一系列版本号之类的东西就证明安装成功。<br>  <code>npm install -g hexo-cli</code></p>
+<h2 id="正式搭建"><a href="#正式搭建" class="headerlink" title="正式搭建"></a><strong>正式搭建</strong></h2><p>下面我们开始正式搭建自己的博客</p>
+<p>首先我们在目录下创建一个文件夹，就叫做blog，后续如果做的不满意或者出现看不懂的错误，可以直接删掉这个文件夹重来。<br>    <code>mkdir blog</code></p>
+<p>创建完成之后，我们进入这个目录<br>    <code>cd blog</code></p>
+<p>现在我们开始初始化博客（一定要安装好Git才可以进行这一步)，这个过程需要一点时间，安装成功的话会出现start blog with hexo~~。进入blog文件夹里可以看到多了很多东西。<br>  <code>hexo init</code></p>
+<p>现在我们的博客就搭建起来啦，让我们进去看一看，输入：<br>  <code>hexo s</code><br>这时候我们可以用浏览器访问localhost:4000这个端口，就可以看到我们初始的博客，里面还有一片自动生成的博文。<br>关于hexo博客的写法，网上有很多，我也是个新手，也正在学习中^^^</p>
+<h2 id="部署自己的博客"><a href="#部署自己的博客" class="headerlink" title="部署自己的博客"></a><strong>部署自己的博客</strong></h2><p>这里我推荐部署到github上去，主要是免费而且很方便<br>首先你要有一个github账号，在你的github中新建一个仓库，命名为：你github的名字.github.io（注意一定要是你github上的名字）</p>
+<p>然后我们再次转到命令行，安装一个git部署插件<br>    <code>npm install --save hexo-deployer-git</code><br>接着我们搞一下配置文件<br>    <code>notepad _config.yml</code><br>打开之后，找到文件最底部，更新配置<br>    deploy:<br>      type: git<br>      repo: <a href="https://github.com/~~~/~~~~.github.io.git（这里写自己仓库的地址" target="_blank" rel="noopener">https://github.com/~~~/~~~~.github.io.git（这里写自己仓库的地址</a>)<br>      branch: master<br>写完之后 保存退出</p>
+<p>config文件修改完成后，我们开始部署到远端，输入：<br>hexo d 就会自动部署，但是之前一定要配置git的邮箱和用户名，不然这里会报错<br>配置过程中会弹出界面输入你github的账号密码，然后就会自动部署啦 </p>
+<p>部署成功之后，我们可以直接访问 你的github名字.github.io.git，就可以看到自己的博客啦！</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a><strong>后记</strong></h2><p>　　hexo博客还有很多好看的主题，关于更换主题和写博客的教程网上很容易找到，通过写这篇博文，也是再熟练一遍搭建博客的流程，其实非常简单。我是跟着b站up主CODESHEEP的视频来搭的自己的博客，中间也遇到了很多问题，但是b站的弹幕太强大了，看弹幕就解决了我所有的问题哈哈，总之写出自己的博客感觉还是挺不错的。</p>
 
       
 
@@ -280,11 +259,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">技术 博客</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/25/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/02/25/first-blog/">展开全文 >></a>
         </p>
       
 
